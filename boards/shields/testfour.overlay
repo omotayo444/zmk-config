@@ -1,6 +1,11 @@
-#include <dt-bindings/zmk/matrix_transform.h> // Put this with the other includes at the top of your overlay
-
+#include <dt-bindings/zmk/matrix_transform.h>
 / {
+    chosen {
+        zmk,kscan = &kscan0;
+        zmk,physical-layout = &physical_layout0;
+        // Other chosen items
+    };
+
     default_transform: keymap_transform0 {
         compatible = "zmk,matrix-transform";
         columns = <2>; // Length of the "col-gpios" array
@@ -14,17 +19,7 @@
             
         >;
     };
-};
 
-/ {
-    chosen {
-        zmk,kscan = &kscan0;
-        zmk,physical-layout = &physical_layout0;
-        // Other chosen items
-    };
-};
-
-/ {
     defaul_kscan0: kscan0 {
         compatible = "zmk,kscan-gpio-matrix";
         diode-direction = "col2row";
@@ -42,4 +37,5 @@
             
             ;
     };
+
 };
