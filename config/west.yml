@@ -5,7 +5,7 @@ manifest:
     # Additional modules https://github.com/omotayo444/zmk-config/tree/mastercontaining boards/shields/custom code can be listed here as well
     # See https://docs.zephyrproject.org/3.2.0/develop/west/manifest.html#projects
   projects:
-    - name: omotayo444/zmk-config/testfour
+    - name: omotayo444/zmk-config
       remote: zmkfirmware
       revision: main
       import: app/west.yml
