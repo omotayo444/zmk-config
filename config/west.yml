@@ -1,7 +1,7 @@
 manifest:
   remotes:
     - name: zmkfirmware
-      url-base: https://github.com/omotayo444/zmk-config.git
+      url-base: https://github.com
     # Additional modules https://github.com/omotayo444/zmk-config/tree/mastercontaining boards/shields/custom code can be listed here as well
     # See https://docs.zephyrproject.org/3.2.0/develop/west/manifest.html#projects
   projects:
@@ -10,4 +10,4 @@ manifest:
       revision: main
       import: app/west.yml
   self:
-    path: https://github.com/omotayo444/zmk-config.git
+    path:
