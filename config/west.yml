@@ -1,9 +1,9 @@
 manifest:
   remotes:
     - name: zmkfirmware
-      url-base: https://github.com
+      url-base: https://github.com/zmkfirmware
   projects:
-    - name: https://github.com/omotayo444/zmk-config.git # Correct repository name format
+    - name: test # Correct repository name format
       remote: zmkfirmware
       revision: main
       import: app/west.yml         # Optional: if you have a nested west.yml file in 'app'
